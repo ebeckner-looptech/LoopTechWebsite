@@ -59,10 +59,10 @@
               <a class="nav-link text-dark fw-bold" href="About.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark fw-bold" href="Tech.html">Tech</a>
+              <a class="nav-link text-dark fw-bold" href="#">Tech</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark fw-bold" href="Contact.html">Contact</a>
+              <a class="nav-link text-dark fw-bold" href="#">Contact</a>
             </li>
           </ul>
         </nav>
@@ -253,7 +253,7 @@
           <div class="col-md-6 text-center ">
             <div class="contact-cook card">
             <h2>Cook Employee</h2>
-            <p>If you are a Cook Employee, click the link for more information.</p>
+            <p>If you are a Cook Employee, click the link below for more information.</p>
             <a href="#" class="btn btn-dark">More Info</a>
         </div>
           </div>

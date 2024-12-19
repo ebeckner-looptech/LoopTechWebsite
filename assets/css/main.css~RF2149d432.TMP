@@ -62,7 +62,7 @@ header {
 .introA {
   z-index: 0;
   background-color: #ffffff;
-
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,69 +285,4 @@ footer a:hover {
   color: #555; /* Change the text color */
   background-color: #ffffff; /* Change the background color */
   border-top: 1px solid #e9ecef; /* Add a border to the top */
-}
-
-.featured-innovation {
-  background: #fff;
-  padding: 3rem 1rem;
-}
-
-.innovation-card {
-  border: none;
-}
-
-.innovation-card:hover {
-  transform: scale(1.03);
-}
-
-.innovation-card.selected {
-  background-color: #343a40; /* Dark background */
-  color: #ffffff; /* White text */
-}
-
-.innovation-card.selected .card-text,
-.innovation-card.selected .card-title {
-  color: #ffffff; /* Ensure text inside the card is white */
-}
-
-.card-body {
-  height: 250px;
-}
-.no-bullets {
-  list-style-type: none; /* Remove bullet points */
-  padding-left: 0; /* Optional: Remove default padding */
-}
-
-.persistent-contact .container {
-  position: relative;
-}
-
-.text-box {
-  position: absolute;
-  bottom: 50px; /* Gap of 50px from the bottom */
-  left: 50px; /* Gap of 50px from the left */
-  border-radius: 10px;
-  background-color: white;
-  width: 60%; /* Optional: Make the text-box take the full width */
-}
-.social-section .container {
-  position: relative;
-}
-
-.social-section img, .persistent-contact img{
-  height: 35vh;
-  width: 80vw;
-  object-fit: cover;
-}
-.social-section .text-box{
-  background-color: black;
-  color: white;
-}
-
-.social-icon {
-  color: white; /* Change the color of the icons to white */
-}
-
-.social-icon:hover {
-  color: #ff6f00; /* Optional: Change the color on hover */
 }
