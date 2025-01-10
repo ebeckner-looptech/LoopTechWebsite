@@ -42,51 +42,32 @@
     </section>
 
     <!-- Header -->
-    <header id="header" class="py-3 bg-light sticked">
+    <header class="py-3 bg-light sticked">
       <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.html"><img
+        <!-- <h1 class="h4">LOOPTECH</h1>-->
+        <img
           src="assets/img/0Logo/RecText-C.png"
           alt="LoopTech Logo"
           class="logo"
-        /></a>
-        <nav id="navbar" class="navbar d-none d-lg-block">
+        />
+        <nav>
           <ul class="nav">
-            <li class="nav-item ">
-              <a class="nav-link text-dark fw-bold current-page" href="index.html">HOME</a>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-bold current-page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark fw-bold" href="About.html">ABOUT</a>
+              <a class="nav-link text-dark fw-bold" href="About.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark fw-bold" href="Tech.html">TECH</a>
+              <a class="nav-link text-dark fw-bold" href="#">Tech</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark fw-bold" href="Contact.html">CONTACT</a>
+              <a class="nav-link text-dark fw-bold" href="#">Contact</a>
             </li>
           </ul>
         </nav>
-        <i class="mobile-nav-toggle bi bi-list d-lg-none"></i>
       </div>
     </header>
-
-<!-- Slide-in Menu -->
-<div id="mobile-nav" class="mobile-nav">
-  <i class="mobile-nav-close bi bi-x"></i>
-  <ul class="nav flex-column text-center">
-    <li class="nav-item">
-      <a class="nav-link text-dark fw-bold current-page" href="index.html">HOME</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark fw-bold" href="About.html">ABOUT</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark fw-bold" href="Tech.html">TECH</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark fw-bold" href="Contact.html">CONTACT</a>
-    </li>
-  </ul>
-</div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -103,7 +84,7 @@
       <p class="lead">
         Revolutionizing Business Systems with AI-Powered Innovation
       </p>
-      <button class="btn btn-primary" onclick="location.href='Contact.html#contactUs'">Get in Touch</button>
+      <button class="btn btn-primary">Get in Touch</button>
     </section>
 
     <!-- Intro & Mission Section -->
@@ -126,26 +107,26 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-5 bg-light" >
+    <section class="py-5 bg-light">
       <div class="container text-center">
         <h3 class="mb-4">Dashboard</h3>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="stats-card p-4">
-              <h3>90%</h3>
+              <h3>100%</h3>
               <p>Engagement Rate</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="stats-card p-4">
-              <h3>10+</h3>
-              <p>Projects in Pipeline</p>
+              <h3>375%</h3>
+              <p>More Efficient</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="stats-card p-4">
-              <h3> 12,000</h3>
-              <p>First Adapters</p>
+              <h3>2000+</h3>
+              <p>Employees</p>
             </div>
           </div>
         </div>
@@ -155,7 +136,7 @@
     <section class="py-5 about">
       <div class="container text-center">
         <div class="row">
-          <div class="col-md-8  order-2  order-md-1">
+          <div class="col-md-8">
             <p>
               Discover an experimental AI startup dedicated to pushing the
               boundaries of AI confluence. We automate business processes, test
@@ -164,14 +145,14 @@
               company initiative.
             </p>
           </div>
-          <div class="col-md-4 order-1 order-md-2">
+          <div class="col-md-4">
             <h2 class="color-text">Why LOOPTECH?</h2>
           </div>
         </div>
       </div>
     </section>
     <!-- Vision Section -->
-    <section class="py-5 vision-section">
+    <section class="py-5">
       <div class="container text-center">
         <h2>Our Vision</h2>
         <div class="row align-items-center">
@@ -207,8 +188,8 @@
       <div class="container tech text-center">
         <h2>Our Technologies</h2>
         <div class="row py-3 g-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="card p-3 shadow border-light h-100"  onclick="location.href='Tech.html#overview'">
+          <div class="col-md-4">
+            <div class="card p-3 shadow border-light">
               <img
                 src="assets/img/blog/blog-3.jpg"
                 alt="Agentic Systems"
@@ -222,8 +203,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card p-3 shadow border-light h-100" onclick="location.href='Tech.html#featured'">
+          <div class="col-md-4">
+            <div class="card p-3 shadow border-light">
               <img
                 src="assets/img/blog/blog-4.jpg"
                 alt="Coagent Workflows"
@@ -238,8 +219,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card p-3 shadow border-light h-100" onclick="location.href='Tech.html#featured'">
+          <div class="col-md-4">
+            <div class="card p-3 shadow border-light">
               <img
                 src="assets/img/blog/blog-5.jpg"
                 alt="Research Team"
@@ -262,96 +243,90 @@
     <section class="py-5 " style="background-color: #1f2124">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center mb-3 mb-md-0" >
-            <div class="contact-other text-white card h-100">
+          <div class="col-md-6 text-center" >
+            <div class="contact-other text-white card">
             <h2>Get in Touch</h2>
-            <p>Have questions or want to learn more? Send us a message!</p>
-            <a href="Contact.html#contactUs" class="btn btn-light">Contact Us</a>
+            <p>Have questions or want to learn more?</p>
+            <a href="#" class="btn btn-light">Contact Us</a>
         </div>
           </div>
           <div class="col-md-6 text-center ">
-            <div class="contact-cook card h-100">
+            <div class="contact-cook card">
             <h2>Cook Employee</h2>
-            <p>If you are a Cook Employee, click the link for more information.</p>
-            <a href="Contact.html#getInvolved" class="btn btn-dark">More Info</a>
+            <p>If you are a Cook Employee, click the link below for more information.</p>
+            <a href="#" class="btn btn-dark">More Info</a>
         </div>
           </div>
         </div>
       </div>
     </section>
 
-  <!-- Footer -->
-  <footer class="py-5 text-white">
-    <div class="container">
-        <div class="row">
-            <!-- Company Info -->
-            <div class="col-md-3 mb-4">
-                <h5 class="fw-bold">LOOPTECH</h5>
-                <address>
-                    750 Daniels Way<br>
-                    Bloomington, IN<br>
-                    <a href="tel:+18123305494" class="text-prime text-decoration-none">812.330.5494</a>
-                </address>
+    <!-- Footer -->
+    <footer class="py-5 text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">LOOPTECH</h5>
+                    <address>
+                        750 Daniels Way<br>
+                        Bloomington, IN<br>
+                        <a href="tel:+18123305494" class="text-prime text-decoration-none">812.330.5494</a>
+                    </address>
+                </div>
+    
+                <!-- About Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-prime">ABOUT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Introduction and Mission</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Vision & Values</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Why LoopTech?</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">LoopTech FAQ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Key Team Members</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Tech Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-prime">TECH</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Overview</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Featured Innovation</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Future Development</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Roadmap</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-prime">CONTACT</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Get Involved</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Information</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Social Media</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- About Links -->
-            <div class="col-md-3 mb-4">
-                <a href="About.html"> <h5 class="text-prime">ABOUT</h5></a>
-                <ul class="list-unstyled">
-                    <li><a href="About.html#intro&Mission" class="text-white text-decoration-none">Introduction and Mission</a></li>
-                    <li><a href="About.html#vision&Values" class="text-white text-decoration-none">Vision & Values</a></li>
-                    <li><a href="About.html#whyLooptech" class="text-white text-decoration-none">Why LoopTech?</a></li>
-                    <li><a href="About.html#faq" class="text-white text-decoration-none">LoopTech FAQ</a></li>
-                    <li><a href="About.html#keyTeamMembers" class="text-white text-decoration-none">Key Team Members</a></li>
-                </ul>
-            </div>
-
-            <!-- Tech Links -->
-            <div class="col-md-3 mb-4">
-                <a href="Tech.html"><h5 class="text-prime">TECH</h5></a>
-                <ul class="list-unstyled">
-                    <li><a href="Tech.html#overview" class="text-white text-decoration-none">Overview</a></li>
-                    <li><a href="Tech.html#featured" class="text-white text-decoration-none">Featured Innovation</a></li>
-                    <li><a href="Tech.html#future" class="text-white text-decoration-none">Future Development</a></li>
-                    
-                </ul>
-            </div>
-
-            <!-- Contact Links -->
-            <div class="col-md-3 mb-4">
-                <a href="Contact.html"><h5 class="text-prime">CONTACT</h5></a>
-                <ul class="list-unstyled">
-                    <li><a href="Contact.html#getInvolved" class="text-white text-decoration-none">Get Involved</a></li>
-                    <li><a href="Contact.html#contactUs" class="text-white text-decoration-none">Contact Us</a></li>
-                    <li><a href="Contact.html#contactInfo" class="text-white text-decoration-none">Contact Information</a></li>
-                    <li><a href="Contact.html#social" class="text-white text-decoration-none">Social Media</a></li>
-                </ul>
-            </div>
-            <div class="col-md-12 mb-4 text-end">
-              <a href="#top">
-                <img src="assets/img/BackUp Button.png" alt="BackBotton" class="img-fluid" style="max-width: 75px;">
-              </a>
-            </div>
-        </div>
-        
-        <!-- Social Media and Copyright -->
-        <div class="row">
-            <div class="col-md-6 d-flex align-items-center">
-                <span class="me-3">Follow Us</span>
-                <a href="#" class="text-white me-2"><i class="bi bi-google"></i></a>
-                <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-2"><i class="bi bi-x"></i></a>
-                <a href="#" class="text-white me-2"><i class="bi bi-telephone"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
-            </div>
-            <div class="col-md-6 text-end">
-                <small>&copy; 2024 LoopTech. All Rights Reserved.</small>
+    
+            <!-- Social Media and Copyright -->
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <span class="me-3">Follow Us</span>
+                    <a href="#" class="text-white me-2"><i class="bi bi-google"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-x"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-telephone"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="col-md-6 text-end">
+                    <small>&copy; 2024 LoopTech. All Rights Reserved.</small>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>

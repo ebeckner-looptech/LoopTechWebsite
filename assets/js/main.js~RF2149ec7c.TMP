@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /**
    * Mobile nav toggle
-  
+   */
   const mobileNavShow = document.querySelector('.mobile-nav-show');
   const mobileNavHide = document.querySelector('.mobile-nav-hide');
 
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /**
    * Hide mobile nav on same-page/hash links
-   
+   */
   document.querySelectorAll('#navbar a').forEach(navbarlink => {
 
     if (!navbarlink.hash) return;
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /**
    * Toggle mobile nav dropdowns
-
+   */
   const navDropdowns = document.querySelectorAll('.navbar .dropdown > a');
 
   navDropdowns.forEach(el => {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   });
-   */
+
   /**
    * Initiate glightbox
    */
@@ -290,147 +290,4 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
-});
-//update use case for Tech page
-function updateUseCases(type, element) {
-  const useCases = {
-    coagent: [
-      {
-        techTitle: `Use Cases of Coagent Workflow`,
-        title: 'Media Content Generation',
-        description: 'Automates editing, captions, and design suggestions for faster, creative production.',
-        imageSrc: 'assets/img/blog/blog-3.jpg'
-      },
-      {
-        techTitle: `Use Cases of Coagent Workflow`,
-        title: 'Technical Documentation',
-        description: 'Generates drafts, simplifies info, and ensures consistency, reducing time and errors.',
-        imageSrc: 'assets/img/blog/blog-4.jpg'
-      },
-      {
-        techTitle: `Use Cases of Coagent Workflow`,
-        title: 'Product Design & Engineering',
-        description: 'Optimizes CAD, aids prototyping, and enhances collaboration for faster innovation.',
-        imageSrc: 'assets/img/blog/blog-5.jpg'
-      }
-    ],
-   
-    research: [
-      {
-        techTitle: `Use Cases of Agentic Research Team`,
-        title: 'Automated literature reviews',
-        description: 'Automates source collection, summarization, and synthesis, accelerating comprehensive reviews.',
-        imageSrc: 'assets/img/blog/blog-recent-3.jpg'
-      },
-      {
-        techTitle: `Use Cases of Agentic Research Team`,
-        title: 'Data gathering and analysis',
-        description: 'Collects, cleans, and analyzes data, delivering actionable insights with minimal manual effort.',
-        imageSrc: 'assets/img/blog/blog-5.jpg'
-      },
-      {
-        techTitle: `Use Cases of Agentic Research Team`,
-        title: 'Market research insights',
-        description: 'Tracks trends, aggregates competitor data, and generates reports, enhancing strategic decision-making.',
-        imageSrc: 'assets/img/blog/blog-4.jpg'
-      }
-    ]
-  };
-
-  const selectedUseCases = useCases[type];
-
-  
-  for (let i = 0; i < selectedUseCases.length; i++) {
-    document.getElementById(`tech-title-0`).innerText = selectedUseCases[i].techTitle;
-    document.getElementById(`use-case-title-${i + 1}`).innerText = selectedUseCases[i].title;
-    document.getElementById(`use-case-description-${i + 1}`).innerText = selectedUseCases[i].description;
-    document.getElementById(`use-case-image-${i + 1}`).src = selectedUseCases[i].imageSrc;
-  }
-   // Remove 'selected' class from all cards
-   const cards = document.querySelectorAll('.innovation-card');
-   cards.forEach(card => card.classList.remove('selected'));
- 
-   // Add 'selected' class to the clicked card
-   element.classList.add('selected');
-
-}
-
-
-//Form control for the contact page
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.querySelector(".php-email-form");
-  const loadingMessage = document.querySelector(".loading");
-  const errorMessage = document.querySelector(".error-message");
-  const sentMessage = document.querySelector(".sent-message");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault(); // Prevent default form submission
-    loadingMessage.style.display = "block"; // Show loading message
-    errorMessage.style.display = "none"; // Hide error message
-    sentMessage.style.display = "none"; // Hide success message
-
-    try {
-      // Simulate form submission via a fetch call
-      const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-      });
-
-      if (!response.ok) {
-        throw new Error("Something went wrong.");
-      }
-
-      // Simulate success
-      loadingMessage.style.display = "none"; // Hide loading message
-      sentMessage.style.display = "block"; // Show success message
-      form.reset(); // Reset form fields
-    } catch (error) {
-      // Handle errors
-      loadingMessage.style.display = "none"; // Hide loading message
-      errorMessage.style.display = "block"; // Show error message
-      errorMessage.textContent = error.message; // Display error text
-    }
-  });
-});
-
-function sendEmail(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  const subject = `Contact Form Submission from ${name}`;
-  const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-
-  const mailtoLink = `mailto:AIExplorer@cookmedical.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
- 
-  window.location.href = mailtoLink;
-};
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-  const mobileNavClose = document.querySelector('.mobile-nav-close');
-  const mobileNav = document.getElementById('mobile-nav');
-
-  mobileNavToggle.addEventListener('click', function () {
-    console.log('Toggle button clicked'); // Print message to console
-    mobileNav.classList.remove('d-none'); // Ensure the mobile nav is visible
-    mobileNav.classList.add('show');
-    mobileNavToggle.classList.add('d-none'); // Hide the hamburger icon
-    mobileNavClose.classList.remove('d-none'); // Show the close icon
-  });
-
-  mobileNavClose.addEventListener('click', function () {
-    console.log('Close button clicked'); // Print message to console
-    mobileNav.classList.remove('show');
-   // mobileNav.classList.add('d-none'); // Hide the mobile nav
-    mobileNavToggle.classList.remove('d-none'); // Show the hamburger icon
-    //mobileNavClose.classList.add('d-none'); // Hide the close icon
-  });
 });

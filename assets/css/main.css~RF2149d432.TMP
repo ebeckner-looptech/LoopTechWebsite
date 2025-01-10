@@ -48,17 +48,13 @@ header {
   object-fit: cover;
   z-index: -20;
   animation: bounce 5s infinite; /* Add bounce effect */
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .spaced-letters {
   letter-spacing: 0.2em; /* Adjust the value as needed */
 }
-
-
-
-
 .intro {
   z-index: 0;
   background-color: #f8f9fa;
@@ -66,7 +62,7 @@ header {
 .introA {
   z-index: 0;
   background-color: #ffffff;
-
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +70,6 @@ header {
 }
 .bg-orange {
   background-color: #ff6f00;
-  z-index: 10;
 }
 
 .bg-light {
@@ -188,7 +183,7 @@ footer a:hover {
 }
 
 .tech {
-  height: 100%;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,8 +201,9 @@ footer a:hover {
 }
 
 .card-text {
- 
+  height: 12.5vh;
   display: flex;
+
   align-items: center;
   flex-direction: column;
   margin: 10px;
@@ -289,137 +285,4 @@ footer a:hover {
   color: #555; /* Change the text color */
   background-color: #ffffff; /* Change the background color */
   border-top: 1px solid #e9ecef; /* Add a border to the top */
-}
-
-.featured-innovation {
-  background: #fff;
-  padding: 3rem 1rem;
-}
-
-.innovation-card {
-  border: none;
-
-}
-
-.innovation-card:hover {
-  transform: scale(1.03);
-}
-
-.innovation-card.selected {
-  background-color: #343a40; /* Dark background */
-  color: #ffffff; /* White text */
-}
-
-.innovation-card.selected .card-text,
-.innovation-card.selected .card-title {
-  color: #ffffff; /* Ensure text inside the card is white */
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%; 
-}
-.no-bullets {
-  list-style-type: none; /* Remove bullet points */
-  padding-left: 0; /* Optional: Remove default padding */
-}
-
-.persistent-contact .container {
-  position: relative;
-}
-
-.text-box {
-  position: absolute;
-  bottom: 50px; /* Gap of 50px from the bottom */
-  left: 50px; /* Gap of 50px from the left */
-  border-radius: 10px;
-  background-color: white;
-  width: 60%; /* Optional: Make the text-box take the full width */
-}
-.social-section .container {
-  position: relative;
-}
-
-.social-section img, .persistent-contact img{
-  height: 50vh;
-  width: 80vw;
-  object-fit: cover;
-}
-.social-section .text-box{
-  background-color: black;
-  color: white;
-}
-
-.social-icon {
-  color: white; /* Change the color of the icons to white */
-}
-
-.social-icon:hover {
-  color: #ff6f00; /* Optional: Change the color on hover */
-}
-
-.row {
-  margin-bottom: 2rem; /* Add margin to the bottom of each row */
-}
-.card-row{
-  margin-bottom: 2rem; /* Add margin to the bottom of each row */
-  height: 65vh;
-}
-.vision-section {
-  margin-bottom: 4rem; /* Add margin to the bottom of each section */
-}
-
-
-/*--------------------------------------------------------------
-# Mobile Navigation
---------------------------------------------------------------*/
-
-.mobile-nav-toggle {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  padding-top: 2rem;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, .9);
-  z-index: 9998;
-  transform: translateX(100%);
-  transition: transform .3s ease-in-out; /* Add transition for slide-in and slide-out */
-}
-
-.mobile-nav.show {
-  transform: translateX(0); /* Slide in */
-
-}
-
-.mobile-nav-close {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
- 
-  z-index: 9999;
-}
-
-@media (max-width: 992px) {
-.mobile-nav .nav-item{
-  width:100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-}
-
-}
-@media (max-width: 768px){
-  .bg-orange{
-    display: none;
-  }
 }
