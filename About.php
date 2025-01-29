@@ -1,4 +1,15 @@
+<?php
+session_start();
+if (empty($_SESSION['logged_in'])) {
+    // Not logged in, redirect to login
+    header('Location: login.php');
+    exit;
+}
+?>
+
+
 <!DOCTYPE html>
+<a href="logout.php">Logout</a>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -460,3 +471,4 @@
     <script src="assets/js/main.js"></script>
   </body>
 </html>
+
