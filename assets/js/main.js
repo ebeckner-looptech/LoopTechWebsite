@@ -296,43 +296,43 @@ function updateUseCases(type, element) {
   const useCases = {
     coagent: [
       {
-        techTitle: `Use Cases of Coagent Workflow`,
-        title: 'Media Content Generation',
-        description: 'Automates editing, captions, and design suggestions for faster, creative production.',
+        techTitle: `Use Cases of The Theseus Engine & Society of Mind`,
+        title: 'Virtual Workspace',
+        description: 'Allows AI agents to create, modify, and analyze files in real time.',
         imageSrc: 'assets/img/blog/blog-3.jpg'
       },
       {
-        techTitle: `Use Cases of Coagent Workflow`,
-        title: 'Technical Documentation',
-        description: 'Generates drafts, simplifies info, and ensures consistency, reducing time and errors.',
+        techTitle: `Use Cases of The Theseus Engine & Society of Mind`,
+        title: 'Custom Tools',
+        description: 'Seamless, pythonic integration of new tools and services for each user scenario.',
         imageSrc: 'assets/img/blog/blog-4.jpg'
       },
       {
-        techTitle: `Use Cases of Coagent Workflow`,
-        title: 'Product Design & Engineering',
-        description: 'Optimizes CAD, aids prototyping, and enhances collaboration for faster innovation.',
+        techTitle: `Use Cases of The Theseus Engine & Society of Mind`,
+        title: 'Goal-Oriented Collaboration',
+        description: 'Agents proactively share context and tasks, mirroring a collaborative team.',
         imageSrc: 'assets/img/blog/blog-5.jpg'
       }
     ],
    
     research: [
       {
-        techTitle: `Use Cases of Agentic Research Team`,
-        title: 'Automated literature reviews',
-        description: 'Automates source collection, summarization, and synthesis, accelerating comprehensive reviews.',
+        techTitle: `Use Cases of Data MCPS & Privacy`,
+        title: 'Prompt Obfuscation',
+        description: 'Automatically strips sensitive information before calling external model endpoints.',
         imageSrc: 'assets/img/blog/blog-recent-3.jpg'
       },
       {
-        techTitle: `Use Cases of Agentic Research Team`,
-        title: 'Data gathering and analysis',
-        description: 'Collects, cleans, and analyzes data, delivering actionable insights with minimal manual effort.',
-        imageSrc: 'assets/img/blog/blog-5.jpg'
+        techTitle: `Use Cases of AData MCPS & Privacy`,
+        title: 'Agent-powered Moderation',
+        description: ' Local deployment of moderation agents for rejecting data that violates your specification.',
+        imageSrc: 'assets/img/blog/blog-recent-2.jpg'
       },
       {
-        techTitle: `Use Cases of Agentic Research Team`,
-        title: 'Market research insights',
-        description: 'Tracks trends, aggregates competitor data, and generates reports, enhancing strategic decision-making.',
-        imageSrc: 'assets/img/blog/blog-4.jpg'
+        techTitle: `Use Cases of Data MCPS & Privacy`,
+        title: 'Transparency & Ownership',
+        description: 'Ensures you retain full control and visibility of your data across all workflows.',
+        imageSrc: 'assets/img/blog/blog-recent-1.jpg'
       }
     ]
   };

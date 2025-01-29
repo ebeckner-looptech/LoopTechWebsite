@@ -20,7 +20,7 @@ header {
   align-items: center;
   flex-direction: column;
 }
-.hero p,
+
 .hero h1 {
   color: #ffffff;
 }
@@ -71,6 +71,9 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.intro-text{
+  font-weight: 500;
 }
 .bg-orange {
   background-color: #ff6f00;
@@ -206,11 +209,13 @@ footer a:hover {
 }
 
 .card-text {
- 
+  flex: 1;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
   margin: 10px;
+  align-items: center; /* Center the text horizontally */
+  text-align: center;
 }
 
 .values-card {
@@ -415,11 +420,69 @@ footer a:hover {
   height: 10vh;
   display: flex;
   justify-content: center;
+}  
 }
 
-}
+
 @media (max-width: 768px){
   .bg-orange{
     display: none;
   }
+  .hero {
+    padding: 2rem 1rem; /* Reduce padding on mobile devices */
+    height: 30vh; /* Set a shorter height on mobile devices */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Adjust font size for the title on mobile devices */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Adjust font size for the paragraph on mobile devices */
+  }
+
+  .hero button {
+    font-size: 1rem; /* Adjust font size for the button on mobile devices */
+  }
+h2 {
+    text-align: center; /* Center the text on mobile devices */
+  }
+}
+
+
+.glossy-background {
+  background: rgba(0, 0, 0, 0.65); /* Semi-transparent white background */
+  backdrop-filter: blur(22px); /* Glossy effect */
+  padding: 1rem 2rem; /* Adequate padding for readability */
+  margin: 1rem 0; /* Adequate margin for spacing */
+  border-radius: 100px; /* Rounded corners for a polished look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+.lead{
+  font-weight: 600;
+color: #e9ecef;
+}
+.align-left {
+  text-align: left;
+  
+}
+.center-container {
+  display: flex;
+  justify-content: center; /* Center the element horizontally */
+  align-items: center; /* Center the element vertically */
+}
+.custom-margin-top {
+  margin-top: 20px; /* Adjust the value as needed */
+}
+
+.ab-margin{
+margin-left: 15px;
+}
+
+.bg-image {
+  background-image: url('assets/img/images/Rectangle.png'); /* Replace with your image path */
+  background-size: cover; /* Ensure the background image covers the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-clip: border-box; /* Ensure compatibility */
 }
