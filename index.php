@@ -24,30 +24,30 @@ if (empty($_SESSION['logged_in'])) {
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
+    </head>
 
-  <body>
+    <body>
     <!-- Top Bar -->
     <section class="bg-orange text-white py-2">
       <div class="container d-flex justify-content-between align-items-center">
-        <div>
-          <i class="bi bi-envelope me-2"></i
-          ><a
-            href="mailto:AIExplorer@cookmedical.com"
-            class="text-white text-decoration-none"
-            >AIExplorer@cookmedical.com</a
-          >
-         <!--  <i class="bi bi-phone ms-4"></i
-          ><span class="ms-2">+1 5589 55488 55</span> -->
-        </div>
-        <div class="d-flex">
-          <!-- <a href="#" class="text-white me-4"><i class="bi bi-facebook"></i></a> -->
-          <a href="#" class="text-white me-4"
-            ><i class="bi bi-twitter-x"></i
-          ></a>
-          <a href="#" class="text-white me-4"><i class="bi bi-linkedin"></i></a>
-       <!--    <a href="#" class="text-white"><i class="bi bi-google"></i></a> -->
-        </div>
+      <div>
+        <i class="bi bi-envelope me-2"></i>
+        <a
+        href="mailto:AIExplorer@cookmedical.com"
+        class="text-white text-decoration-none"
+        >
+        AIExplorer@cookmedical.com
+        </a>
+        <p>Hello, <?php echo htmlspecialchars($_SESSION['user_email'] ?? ''); ?>!</p>
+      </div>
+      <div class="d-flex">
+        <a href="#" class="text-white me-4">
+        <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="#" class="text-white me-4">
+        <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
       </div>
     </section>
 

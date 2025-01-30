@@ -1,33 +1,43 @@
 <?php
+/**
+ * login.php
+ *
+ * Publicly accessible login page. 
+ * Verifies user credentials and sets $_SESSION['logged_in'] on success.
+ */
 session_start();
 
-// If user is already logged in, skip the login page and go straight to index.php
+// If user is already logged in, go straight to the "home" or protected page
 if (!empty($_SESSION['logged_in'])) {
-    header('Location: index.php'); 
-    exit;
+  header('Location: index.php');
+  exit;
 }
 
-// Process login form submission
+$errorMsg = '';
+
+// If the login form was submitted
 if (isset($_POST['login-submit'])) {
-    $email    = $_POST['login-email']    ?? '';
-    $password = $_POST['login-password'] ?? '';
+  $email = $_POST['login-email'] ?? '';
+  $pass  = $_POST['login-password'] ?? '';
 
-    // Load allowed emails from users.php
-    $whitelist = require __DIR__ . '/users.php';
-    $allowed   = $whitelist['allowed_emails'];
+  // Connect to DB
+  $pdo = require __DIR__ . '/db.php';
 
-    // Hard-coded password for example:
-    $validPassword = 'Secret123';
+  // Prepare and execute
+  $stmt = $pdo->prepare("SELECT id, password_hash FROM users WHERE email = ?");
+  $stmt->execute([$email]);
+  $user = $stmt->fetch();
 
-    // Check email/password
-    if (in_array($email, $allowed, true) && $password === $validPassword) {
-        $_SESSION['logged_in']  = true;
-        $_SESSION['user_email'] = $email;
-        header('Location: index.php');
-        exit;
-    } else {
-        $errorMsg = "Invalid email or password.";
-    }
+  // Check if user record found and password is correct
+  if ($user && password_verify($pass, $user['password_hash'])) {
+      // success
+      $_SESSION['logged_in']  = true;
+      $_SESSION['user_email'] = $email;
+      header('Location: index.php');
+      exit;
+  } else {
+      $errorMsg = "Invalid email or password.";
+  }
 }
 
 // If sign-up is relevant, you can handle that here too, e.g. `$_POST['signup-submit']`...

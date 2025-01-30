@@ -1,0 +1,27 @@
+<?php
+/**
+ * db.php
+ * 
+ * Returns a $pdo object for MySQL. 
+ * 
+ * You should define environment variables (via Azure Portal → App Service → Configuration):
+ *   DB_HOST, DB_NAME, DB_USER, DB_PASS
+ */
+
+$host = $_ENV['DB_HOST'] ?? 'localhost';
+$db   = $_ENV['DB_NAME'] ?? 'mydbname';
+$user = $_ENV['DB_USER'] ?? 'mydbuser';
+$pass = $_ENV['DB_PASS'] ?? 'mypassword';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
+
+try {
+    $pdo = new PDO($dsn, $user, $pass, [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ]);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
+
+return $pdo;
